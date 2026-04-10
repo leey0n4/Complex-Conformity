@@ -64,7 +64,6 @@ console.log(boids.filter(b => b.belief).length);
 
 function draw() {
   let now = millis();
-  let ratio = flock.getRatio();
   globalPI = flock.calculateGlobal_PI(flock.boids);
   background(59,49,41);
   flock.run();
